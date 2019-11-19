@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".detail_phim_activity">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layout_top"
+            android:background="@drawable/backgroud_detail"
+            android:paddingBottom="20dp"
+            >
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/background_image"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_tenphim"
+        android:text="Ten phim"
+        android:layout_below="@id/img_view"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textColor="#0F0F0F"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_daodien"
+        android:layout_below="@id/tv_tenphim"
+        android:textSize="20sp"
+        android:textColor="#0F0F0F"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:text="Dao dien"
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_thoiluong"
+        android:layout_below="@id/tv_daodien"
+        android:textSize="20sp"
+        android:textColor="#0F0F0F"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:text="thoi luong"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ngayphathanh"
+        android:layout_below="@id/tv_thoiluong"
+        android:textSize="20sp"
+        android:textColor="#0F0F0F"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"
+        android:text="ngay phat hanh"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_ngayphathanh"
+        android:id="@+id/btn_xemphim"
+        android:layout_centerHorizontal="true"
+        android:text="Xem phim"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="#1B1A1A"
+        android:drawableStart="@drawable/play"
+        android:background="@drawable/custombottom"
+
+        />
+        </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrool_"
+        android:layout_below="@id/layout_top"
+       >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_mota"
+
+
+        android:text="mota"
+        android:textSize="20sp"
+        android:textColor="#161515"
+        />
+    </ScrollView>
+
+</RelativeLayout>
